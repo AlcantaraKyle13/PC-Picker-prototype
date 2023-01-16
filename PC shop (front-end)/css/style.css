@@ -1,0 +1,456 @@
+:root {
+  --black: rgb(32, 32, 32);
+  --white: #ffffff;
+  --violet: #7206b9;
+  --dark_violet: #4d0a74f1;
+  --dark_gray: #494949;
+  --box-shadow: 0 .5 rem 1.5 rem rgba(0,0,0,.1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* Navigation bar -li -ul*/
+
+.logo {
+    color:var(--white);
+    padding: 1.5rem 5rem;
+    font-size: 1.9rem;
+    font-weight: bolder;
+}
+
+.wrapper .multi_color_border{
+  width: 100%;
+  height: 30px;
+  background: var(--dark_violet);
+}
+
+.wrapper .top_nav{
+  width: 100%;
+  height: 75px;
+  background: var(--violet);
+  padding: 45px 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper .top_nav .left{
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .top_nav .left .logo p{
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  margin-right: 25px;
+}
+
+.wrapper .top_nav .left .logo p span{
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper .top_nav .left .search_bar form{ 
+  display: flex;
+  width: 250%;
+}
+
+.wrapper .top_nav .left .search_bar input[type="text"]{
+  border: 1px solid #ffffff;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 15px; 
+  width: 150%;
+  outline: none;
+}
+
+.wrapper .top_nav .left .search_bar button{
+  border: 1px solid var(--dark_violet);
+  background-color: var(--dark_violet);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 13px; 
+  width: 25%;
+}
+
+.wrapper .top_nav .left .search_bar button :hover{
+  transition: 0.5s;
+  background-color: var(--violet);
+}
+
+
+.top_nav .right ul{
+  display: flex;
+}
+
+.top_nav .right button{
+  border: none;
+  color: var(--white);
+  background-color: transparent;
+}
+
+
+.top_nav .right ul li{
+  margin: 0 12px;
+}
+.top_nav .right ul li a{
+  display: block;
+  padding: 8px 10px;
+  color: var(--white);
+}
+
+.top_nav .right button {
+  display: block;
+  padding: 8px 10px;
+  color: var(--white);
+  outline: none;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+
+/* bottom navigation bar */
+
+.bottom_nav{
+  width: 100%;
+  background: #f9f9f9;
+  height: 45px;
+  padding: 0px 50px;
+}
+
+.bottom_nav ul{
+  width: 100%;
+  height: 45px;
+  margin: 3px;
+  padding: 0.77rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom_nav ul li a{
+  color: #494949;
+  padding: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.bottom_nav a :hover {
+  transition: 0.5s;
+  background-color: #7206b9;
+  color: var(--dark_violet);
+}
+
+
+/* hero gallery showcase section */
+
+.hero_showcase {
+  width: 100%;
+  height: 500px;
+  user-select: none;
+  padding: 4rem;
+  display: flex;
+
+}
+
+.hero_showcase image {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+}
+
+.hero_intro {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  font-size: 2.4rem;
+  color: var(--violet);
+  text-transform: uppercase;
+  
+}
+
+
+
+.hero_showcase .image_holder {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 4px;
+  background-color: none;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+
+.hero_showcase img{
+  width: calc(100% / 4);
+  height: 400px;
+  object-fit: contain;
+  justify-content: center;
+  
+  
+}
+
+
+/* about section */
+
+.about_intro {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  font-size: 2.4rem;
+  color: var(--violet);
+  text-transform: uppercase;
+  
+}
+
+.about_help {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 0 330px;
+  margin: 3rem;
+  font-size: 21px;
+  line-height: 2.5rem;
+  letter-spacing: 2px;
+  color: var(--dark_gray);
+  text-transform: uppercase;
+}
+
+.about_help img {
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+}
+
+
+/* Log in / sign up form */
+
+.center .pop-up-login {
+  position: absolute;
+  top:50%;
+  left:50%;
+  width: 400px;
+  background: var(--white);
+  border-radius: 10px;
+}
+
+.pop-up .form-element a {
+  list-style: none;
+  text-decoration: none;  
+
+}
+
+.pop-up {
+    height: 520px;
+    width: 500px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 2px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+
+}
+
+.pop-up .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: var(--violet);
+  color: var(--white);
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+
+}
+
+
+.pop-up .form h2 {
+  text-align: center;
+  color: var(--dark_gray);
+  margin: 10px 0 45px;
+  font-size: 28px;
+}
+
+.pop-up .form .form-element {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: 30px 0;
+  font-size: 16px;
+
+}
+
+.pop-up .form .form-element label {
+    display: block;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.pop-up .form .form-element input {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 13px;
+  outline: none;
+  border: 1px solid var(--dark_gray);
+  border-radius: 5px;
+}
+
+
+.form .form-element button {
+  width: 50%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  display: block;
+  background: var(--violet);
+  color: var(--white);
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.pop-up .form .form-element a {
+  display: block;
+  text-align: right;
+  font-size: 15px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+/* PC-Customization support */
+
+.PC-parts-picker {
+  width: 100%;
+  height: 75px;
+  padding: 50px 300px;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PC-parts-picker h1 {
+  font-size: 21px;
+  margin: 4rem;
+  font-weight: 100;
+}
+
+
+/* Voice-speech to text */
+
+.speech_recognition {
+    height: 520px;
+    width: 500px;
+    background-color: rgba(255,255,255,0.13);
+    position: fixed;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 2px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+
+}
+
+.speech_recognition label {
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  display: flex;
+  margin-bottom: 45px;
+}
+
+#speechToText {
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  border-radius: 25px;
+  padding: 13px;
+  margin: 130px 0;
+  font-size: 16px;
+}
+
+
+/* PC-parts picker */
+
+.PC-parts-picker {
+  height: 520px;
+  width: 1000px;
+  background-color: rgba(255,255,255,0.13);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-size: 18px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 2px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+}
+
+.PC-parts-picker .picker-logo {
+  text-align: center;
+  color: var(--dark_gray);
+  margin: -15px 0px 40px 0px;
+  font-size: 28px;
+}
+
+.PC-parts-picker label {
+  margin: 6px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.PC-parts-picker select {
+  border: 0.5px solid var(--dark_gray);
+  margin: 5px;
+  width: 450px;
+  height: 35px;
+  padding: 5px;
+}
